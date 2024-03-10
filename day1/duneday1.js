@@ -89,7 +89,7 @@ console.log(dune1);
 
 /**
  * Boolean 타입
- *  1)참과 거짓 ture false
+ *  1)참과 거짓 true false
  */
 const isTrue = true;
 const isFalse = false;
