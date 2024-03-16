@@ -3,17 +3,16 @@
  *  모든 변수 선언문이 코드의 최상단으로 이동되는 것처럼 느껴지는 현상을 이야기한다.
  *  var, let, const 모두 hoisting된다!
  */
-console.log("hello");
-console.log("world");
 
 // console.log(name);
 // var name = "dune";
 // console.log(name);
-
-var name;
-console.log(name);
-name = "dune";
-console.log(name);
+const Hoisting = () => {
+  var name;
+  console.log(name);
+  name = "dune";
+  console.log(name);
+};
 
 // console.log(sana);
 // let sana = "사나";
@@ -52,37 +51,41 @@ console.log(name);
  * 1) 값의 비교
  * 2) 값과 타입의 비교
  */
+const equal = () => {
+  console.log(5 === 5);
+  // JS는 강제 형변환을 통해 값을 비교한다.
+  console.log(5 == "5");
 
-console.log(5 === 5);
-// JS는 강제 형변환을 통해 값을 비교한다.
-console.log(5 == "5");
-
-// 그래서 JS에서는 ===연산자를 통해 값과 타입을 모두 비교한다.
-console.log(5 === "5");
+  // 그래서 JS에서는 ===연산자를 통해 값과 타입을 모두 비교한다.
+  console.log(5 === "5");
+};
 
 /**
  * 삼항 조건 연산자(ternary operator)
  * 10 > 0 ? '맞다' :'아니다' 의 형식
  */
-console.log(19 > 19 ? "맞다" : "아니다");
-// 예전 프로젝트에서 사용해봤는데 렌더링 조건 걸때 사용하기 좋았다! 예를들면 다크모드?
-
+const ternary = () => {
+  console.log(19 > 19 ? "맞다" : "아니다");
+  // 예전 프로젝트에서 사용해봤는데 렌더링 조건 걸때 사용하기 좋았다! 예를들면 다크모드?
+};
 /**
  * 논리연산자
  * 1)&& 모든조건이 true여야 값을 true를 반환(AND)
  * 2)|| 둘중 하나가 true면 true를 반환(OR)
  */
 
-console.log(true && true);
-console.log(true && false);
+const bool = () => {
+  console.log(true && true);
+  console.log(true && false);
 
-console.log(true || false);
-console.log(true || true);
+  console.log(true || false);
+  console.log(true || true);
 
-console.log(10 > 1 && 20 > 2 ? "통과" : "실패");
-let sex = "male";
-console.log(19 < 20 && sex === "male" ? "통과" : "불통과");
-console.log(19 > 19 && sex === "male" ? "통과" : "불통과");
+  console.log(10 > 1 && 20 > 2 ? "통과" : "실패");
+  let sex = "male";
+  console.log(19 < 20 && sex === "male" ? "통과" : "불통과");
+  console.log(19 > 19 && sex === "male" ? "통과" : "불통과");
+};
 
 /**
  * 단축평가 (short circuit evaluation)
@@ -92,11 +95,12 @@ console.log(19 > 19 && sex === "male" ? "통과" : "불통과");
  * || 사용시 좌측이 true면 좌측값 반환
  * || 사용시 좌측이 false면 우측값 반환
  */
-
-console.log(true && "twice");
-console.log(false && "twice");
-console.log(true || "twice");
-console.log(false || "twice");
+const short = () => {
+  console.log(true && "twice");
+  console.log(false && "twice");
+  console.log(true || "twice");
+  console.log(false || "twice");
+};
 
 /**
  * null연산자
@@ -110,11 +114,14 @@ console.log(false || "twice");
  *
  * name이 null 이거나 undefined면 dune을 출력한다는 의미
  */
-let dune;
-console.log(dune);
-// dune 이 null,undefine 면 "dune"을 출력
-dune = dune ?? "dune";
-console.log(dune);
-// 하지만 선행코드에서 null연산자를 통해 dune을 넣어주었으므로 calm이 아닌 dune을 출력한다.
-dune = dune ?? "calm";
-console.log(dune);
+
+const nullish = () => {
+  let dune;
+  console.log(dune);
+  // dune 이 null,undefine 면 "dune"을 출력
+  dune = dune ?? "dune";
+  console.log(dune);
+  // 하지만 선행코드에서 null연산자를 통해 dune을 넣어주었으므로 calm이 아닌 dune을 출력한다.
+  dune = dune ?? "calm";
+  console.log(dune);
+};
