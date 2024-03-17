@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/day1/duneday1.css" />
     <script src="./duneday1.js"></script>
+    <script src="./layout.js"></script>
     <title>Dune's day1</title>
   </head>
   <body>
-    <div class="but">
-      <button onclick="clickVariable()">변수</button>
-      <button onclick="isUndefined()">isUndefined</button>
-      <button onclick="isType()">타입확인</button>
-      <button onclick="isLiteral()">Template Literal</button>
-      <button onclick="isBool()">Boolean</button>
-      <button onclick="isNull()">Null</button>
-      <button onclick="isSymbol()">Symbol</button>
-      <button onclick="isObject()">Object</button>
-      <button onclick="isArr()">Array</button>
+    <div class="Box">
+      <div class="butbox">
+        <button class="but" onclick="clickVariable()">변수</button>
+        <div class="dataText">
+          <div>
+            변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
+            단 개념을알고있어야 추후 진행가능하므로 책을 읽어보자 <br />
+            let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
+          </div>
+          <div>
+            let dune = "티모시"; <br />
+            console.log(dune); <br />
+            dune = "모래두더지"; <br />
+            console.log(dune); <br />
+            const date = "3월9일"; <br />
+            console.log(date); <br />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button class="but" onclick="isUndefined()">isUndefined</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isType()">타입확인</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isLiteral()">Template Literal</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isBool()">Boolean</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isNull()">Null</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isSymbol()">Symbol</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isObject()">Object</button>
+      </div>
+
+      <div>
+        <button class="but" onclick="isArr()">Array</button>
+      </div>
     </div>
     <footer id="footer_but">
       <button>
