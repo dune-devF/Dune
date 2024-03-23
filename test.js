@@ -223,203 +223,60 @@ const isArr = () => {
   console.log("---------------------");
 };
 
-//버튼이벤트 핸들러
-let btn = false;
-let btn2 = false;
-let btn3 = false;
-let btn4 = false;
-let btn5 = false;
-let btn6 = false;
-let btn7 = false;
-let btn8 = false;
-
-const btnCtr = (n) => {
-  // btn 값에 따라 내용 변경
-
-  btn = !btn;
-  btn2 = !btn2;
-  btn3 = !btn3;
-  btn4 = !btn4;
-  btn5 = !btn5;
-  btn6 = !btn6;
-  btn7 = !btn7;
-  btn8 = !btn8;
-
-  if (n === 1) {
-    if (btn === false) {
-      document.querySelector(".textBox").innerHTML = `
-    변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-    단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-    let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-      `;
-      document.querySelector(".textBox").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox").innerHTML = `
-    let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-    let dune = "티모시"; <br />
-    console.log(dune); <br />
-    dune = "모래두더지"; <br />
-    console.log(dune); <br />
-    const date = "3월9일"; <br />
-    console.log(date);
-      `;
-    }
-  }
-
-  if (n === 2) {
-    if (btn2 === false) {
-      document.querySelector(".textBox2").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox2").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox2").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
-
-  if (n === 3) {
-    if (btn3 === false) {
-      document.querySelector(".textBox3").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox3").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox3").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
-
-  if (n === 4) {
-    if (btn4 === false) {
-      document.querySelector(".textBox4").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox4").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox4").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
-
-  if (n === 5) {
-    if (btn5 === false) {
-      document.querySelector(".textBox5").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox5").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox5").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
-
-  if (n === 6) {
-    if (btn6 === false) {
-      document.querySelector(".textBox6").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox6").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox6").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
-
-  if (n === 7) {
-    if (btn7 === false) {
-      document.querySelector(".textBox7").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox7").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox7").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
-
-  if (n === 8) {
-    if (btn8 === false) {
-      document.querySelector(".textBox8").innerHTML = `
-      변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
-      단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
-      let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
-        `;
-      document.querySelector(".textBox8").style.backgroundColor = "transparent";
-    } else {
-      document.querySelector(".textBox8").innerHTML = `
-      let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
-      let dune = "티모시"; <br />
-      console.log(dune); <br />
-      dune = "모래두더지"; <br />
-      console.log(dune); <br />
-      const date = "3월9일"; <br />
-      console.log(date);
-        `;
-    }
-  }
+// 초기 버튼 상태 설정
+const buttonStates = {
+  btn1: false,
+  btn2: false,
+  btn3: false,
+  btn4: false,
+  btn5: false,
+  btn6: false,
+  btn7: false,
+  btn8: false,
 };
+
+// 각 버튼에 따른 내용
+const buttonContents = {
+  btn1: {
+    false: `
+        변수선언 var : 호이스팅으로 현재 사용하지 않는다. <br />
+        단 개념을 알고 있어야 추후 진행 가능하므로 책을 읽어보자 <br />
+        let : 변수선언 추후 변경 가능 const : 상수선언 추후 변경 불가능
+      `,
+    true: `
+        let : 변수선언 추후 변경가능 const : 상수선언 추후 변경불가능 <br />
+        let dune = "티모시"; <br />
+        console.log(dune); <br />
+        dune = "모래두더지"; <br />
+        console.log(dune); <br />
+        const date = "3월9일"; <br />
+        console.log(date);
+      `,
+  },
+  btn2: {
+    false: "버튼 2의 내용을 여기에 입력하세요",
+    true: "버튼 2의 내용을 여기에 입력하세요",
+  },
+  // 나머지 버튼에 대한 내용도 동일한 방식으로 추가할 수 있습니다.
+};
+
+// 버튼 상태에 따른 내용 변경 함수
+const btnCtr = (buttonNumber) => {
+  const buttonStateKey = "btn" + buttonNumber;
+  const buttonState = buttonStates[buttonStateKey];
+  const textBox = document.querySelector(`.textBox${buttonNumber}`);
+  const content = buttonContents[buttonStateKey][buttonState];
+
+  textBox.innerHTML = content;
+  textBox.style.backgroundColor = buttonState ? "transparent" : "white";
+
+  // 버튼 상태 업데이트
+  buttonStates[buttonStateKey] = !buttonState;
+};
+
+// 페이지 로드 시 초기화
 window.onload = function () {
-  btnCtr(1);
-  btnCtr(2);
-  btnCtr(3);
-  btnCtr(4);
-  btnCtr(5);
-  btnCtr(6);
-  btnCtr(7);
-  btnCtr(8);
+  for (let i = 1; i <= 8; i++) {
+    btnCtr(i);
+  }
 };
