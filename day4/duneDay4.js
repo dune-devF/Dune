@@ -42,11 +42,11 @@ const multi3 = function (x, y, z) {
 console.log(multi3(1, 2, 3));
 
 //parameter를 무한히 받는법 ...argument
-const infi = function (...arguments) {
+const inFi = function (...arguments) {
   return Object.values(arguments).reduce((a, b) => a * b, 1);
 };
 
-console.log(infi(3, 4, 5, 6, 7, 8, 9));
+console.log(inFi(3, 4, 5, 6, 7, 8, 9));
 
 // 함수의 식별자없이 즉시 실행하는방법 ()안에 함수를 넣고 ()값에 파라미터값을 입력
 (function (x, y) {

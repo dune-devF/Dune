@@ -120,7 +120,7 @@ console.log(numbers.filter((a) => a % 2 === 0));
 //find() - 파라미터를 받아 조건에 만족하는 가장 처음값을 반환
 console.log(numbers.find((x) => x % 2 === 0));
 
-//findIndex() -finde와 같은 값을 반환하나 그값의 index를 반환
+//findIndex() -find와 같은 값을 반환하나 그값의 index를 반환
 console.log(numbers.findIndex((x) => x % 2 === 0));
 console.log("-------------------------------------------------");
 
